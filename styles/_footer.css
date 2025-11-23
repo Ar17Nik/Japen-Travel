@@ -1,0 +1,14 @@
+footer {
+  margin: 0 auto;
+  padding: 6%;
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    align-items: center;
+  }
+  footer .nav__logo, footer .nav__line {
+    display: none;
+  }
+}/*# sourceMappingURL=footer.css.map */

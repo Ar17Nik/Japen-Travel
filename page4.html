@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Kokoro&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maket-3</title>
+  <link rel="stylesheet" href="styles/style4.css" />
+</head>
+<body class="page">
+<div class="background">
+  
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+          <div class="nav__menu">
+            <a class="nav__logo" href="#">
+              <img class="nav__logo-image" src="images/Logo.png" alt="Logo" />
+            </a>
+            <div class="nav__burger" onclick="toggleNav()">
+              <img class="nav__burger-icon" src="images/burger.png" alt="Бургер" />
+            </div>
+            
+            <ul class="nav__list nav__list--mobile">
+              <li class="nav__item"><a class="nav__link" href="index.html">Main</a></li>
+              <li class="nav__item"><a class="nav__link" href="page2.html">About Us</a></li>
+              <li class="nav__item"><a class="nav__link" href="page3.html?">Tours</a></li>
+              <li class="nav__item"><a class="nav__link" href="page4.html">Contact</a></li>
+            </ul>
+            <div id="nav-overlay"></div>
+            <form class="nav__form nav__button--search" action="#" method="get">
+              <input type="text" class="nav__input" name="query" placeholder="Search..." >
+              <button type="submit" class="nav__submit">
+                <img class="nav__button-icon" src="images/serch.png" alt="Search Icon" />
+              </button>
+              </form>
+            </form>
+          </div>
+
+          <div class="nav__line"></div>
+        </div>
+      </nav>
+  </header>
+
+
+  <section class="nav__section nav__section--front">
+    <div class="container">
+      <div class="nav__title">
+        <h1 class="nav__title-text">VISIT TOKYO</h1>
+        <div class="nav__title-numbers">
+          <p class="nav__title-number">03</p>
+          <p class="nav__title-number">02</p>
+          <p class="nav__title-number nav__title-number--active">01</p>
+          <p class="nav__title-number">04</p>
+          <p class="nav__title-number">05</p>
+        </div>
+      </div>
+
+      <h2 class="nav__menu--title">ABOUT US</h2>
+
+      <div class="nav__info">
+        <div class="nav__info--block main">
+            <h3 class="info__block--title">Company story</h2>
+            <p class="info__block--main">Wander Nippon was born from a shared passion for the hidden beauty of Japan. Founded by two lifelong friends who met under Kyoto’s cherry blossoms, the company set out to show travelers more than just the postcard sights.</p>
+            <a href="#"  class="nav__info--button">Learn more</a>
+        </div>
+            
+        <div class="nav__info--block nav__info--block--second">
+            <h3 class="info__block--title">Mission state</h2>
+            <p class="info__block--main">To create unforgettable travel experiences across Japan by combining authentic cultural immersion, personalized service, and deep local knowledge. We aim to connect travelers with the heart of Japan—its people and traditions.</p>
+            <a href="#" class="nav__info--button">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="nav__line"></div>
+</div>
+
+
+<section class="reviews" id="reviews">
+  <div class="container">
+    <h2 class="reviews__title">Leave your review about the journey</h2>
+    <h3 class="reviews__subtitle">Our reviews</h3>
+
+    <div class="reviews__grid">
+      <div class="review__card">
+        <div class="review__header">
+          <img src="images/icon1.png" alt="Elena S." class="review__avatar">
+          <div class="review__meta">
+            <h4 class="review__name">Elena S.</h4>
+            <span class="review__date">23.12.2023</span>
+          </div>
+        </div>
+        <p class="review__text">"This journey opened a door to a side of Japan I never knew existed. Kyoto’s quiet temples at dawn, the way the light filters through old wooden houses, the kindness of strangers in small towns — it all felt timeless. I spent hours soaking in a mountain onsen, surrounded by mist and pine trees. It wasn’t just a vacation; it was a form of healing. Japan doesn’t shout — it whispers. And you leave with its voice still inside you."</p>
+        <div class="review__rating">★★★★⯪ 4.8</div>
+      </div>
+
+      <div class="review__card">
+        <div class="review__header">
+          <img src="images/icon2.png" alt="Marco R." class="review__avatar">
+          <div class="review__meta">
+            <h4 class="review__name">Marco R.</h4>
+            <span class="review__date">30.10.2024</span>
+          </div>
+        </div>
+        <p class="review__text">"This journey opened a door to a side of Japan I never knew existed. Kyoto’s quiet temples at dawn, the way the light filters through old wooden houses, the kindness of strangers in small towns — it all felt timeless. I spent hours soaking in a mountain onsen, surrounded by mist and pine trees. It wasn’t just a vacation; it was a form of healing. Japan doesn’t shout — it whispers. And you leave with its voice still inside you."</p>
+        <div class="review__rating">★★★★★ 5</div>
+      </div>
+
+      <div class="review__card">
+        <div class="review__header">
+          <img src="images/icon3.png" alt="Aisha T." class="review__avatar">
+          <div class="review__meta">
+            <h4 class="review__name">Aisha T.</h4>
+            <span class="review__date">04.06.2025</span>
+          </div>
+        </div>
+        <p class="review__text">“I didn’t expect Japan to feel like memory. Not mine, but something older — woven into the silence of moss-covered paths and the hush of lantern-lit streets. In Nara, I watched deer move like shadows through temple gardens, and in the mountains of Tottori, the wind carried stories I couldn’t quite translate.I left with more than souvenirs — I left with stillness. Japan doesn’t demand attention. It invites you to notice."</p>
+        <div class="review__rating">★★★★⯪ 4.9</div>
+      </div>
+    </div>
+
+    <div class="reviews__footer">
+      <button class="reviews__footer--button contact-form__button">Leave a review</button>
+    </div>
+  </div>
+</section>
+
+<div class="background2">
+<section class="contact-form">
+  <div class="contact-form__content">
+    <div class="contact-form__text">
+      <h2 class="contact-form__title">LET'S DISCUSS THE TRAVEL DETAILS.</h2>
+      <p class="contact-form__subtitle">Contact us</p>
+      <div class="contact-form__icons contact-form__icons--first">
+        <img class="contact-form__icon contact-form__icon--image" src="images/chrome.png" alt="Google">
+        <img class="contact-form__icon contact-form__icon--image" src="images/map-pin.png" alt="Map">
+        <img class="contact-form__icon contact-form__icon--image" src="images/send.png" alt="Send">
+      </div>
+    </div>
+
+    <form class="contact-form__form" action="send.php" method="post">
+      <div class="contact-form__field">
+        <input type="text" name="name" class="contact-form__input" placeholder="Name">
+      </div>
+      <div class="contact-form__field">
+        <input type="email" name="email" class="contact-form__input" placeholder="Email">
+      </div>
+      <div class="contact-form__field">
+        <input type="text" name="message" class="contact-form__input" placeholder="...">
+      </div>
+      <div class="contact-form__footer">
+        <button type="submit" class="contact-form__button">Send</button>
+      </div>
+    </form>
+
+    <div class="contact-form__icons contact-form__icons--second">
+      <img class="contact-form__icon contact-form__icon--image" src="images/chrome.png" alt="Google">
+      <img class="contact-form__icon contact-form__icon--image" src="images/map-pin.png" alt="Map">
+      <img class="contact-form__icon contact-form__icon--image" src="images/send.png" alt="Send">
+    </div>
+  </div> 
+</section>
+
+
+
+
+<footer>
+  <div class="container">
+    <div class="nav__menu">
+      <div class="nav__burger" onclick="toggleNav()">
+        <img class="nav__burger-icon" src="images/burger.png" alt="Бургер" />
+      </div>
+            
+      <ul class="nav__list nav__list--mobile">
+        <li class="nav__item"><a class="nav__link" href="index.html">Main</a></li>
+        <li class="nav__item"><a class="nav__link" href="page2.html">About Us</a></li>
+        <li class="nav__item"><a class="nav__link" href="page3.html">Tours</a></li>
+        <li class="nav__item"><a class="nav__link" href="page4.html">Contact</a></li>
+      </ul>
+      <div id="nav-overlay"></div>
+      <a class="nav__logo" href="#">
+        <img class="nav__logo-image" src="images/Logo.png" alt="Logo" />
+      </a>
+    </div>
+    
+    <div class="nav__line"></div>
+
+  </div>
+</footer>
+  </div>
+
+</body>
+<script src="script/script.js"></script>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maket-3</title>
+  <link rel="stylesheet" href="styles/style1.css">
+</head>
+
+<body class="page">
+  <div class="background">
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__menu">
+            <a class="nav__logo" href="error404.html">
+              <img class="nav__logo-image" src="images/Logo.png" alt="Logo">
+            </a>
+            <div class="nav__burger" onclick="toggleNav()">
+              <img class="nav__burger-icon" src="images/burger.png" alt="Бургер">
+            </div>
+
+            <ul class="nav__list nav__list--mobile">
+              <li class="nav__item"><a class="nav__link" href="index.html">Main</a></li>
+              <li class="nav__item"><a class="nav__link" href="page2.html">About Us</a></li>
+              <li class="nav__item"><a class="nav__link" href="page3.html">Tours</a></li>
+              <li class="nav__item"><a class="nav__link" href="page4.html">Contact</a></li>
+            </ul>
+            <form class="nav__form nav__button--search" action="#" method="get">
+              <input type="text" class="nav__input" name="query" placeholder="Search...">
+              <button type="submit" class="nav__submit">
+                <img class="nav__button-icon" src="images/serch.png" alt="Search Icon">
+              </button>
+            </form>
+          </div>
+
+          <div class="nav__line"></div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="nav__section nav__section--front">
+      <div class="container">
+        <div class="nav__title">
+          <h1 class="nav__title-text">VISIT TOKYO</h1>
+          <div class="nav__title-numbers">
+            <p class="nav__title-number">03</p>
+            <p class="nav__title-number">02</p>
+            <p class="nav__title-number nav__title-number--active">01</p>
+            <p class="nav__title-number">04</p>
+            <p class="nav__title-number">05</p>
+          </div>
+        </div>
+
+        <div class="nav__info">
+          <div class="nav__info--block main">
+            <p class="info__block--main">Whether you're exploring ancient castles, vibrant festivals, or futuristic
+              cityscapes, Japan promises unforgettable adventures.</p>
+            <p class="info__block--second">Whether you're wandering through ancient castles or exploring futuristic
+              cityscapes, Japan offers moments that stay with you. It’s a place where every journey feels unforgettable.
+            </p>
+            <a href="error404.html">Learn more →</a>
+          </div>
+
+          <div class="nav__info--block nav__info--block--second">
+            <p class="info__block--main">You can wander through the tranquil lage bamboo forests of Arashiyama or marvel
+              at the beautiful cherry blossoms in a spring.</p>
+            <p class="info__block--second">Japan is a paradise for travelers seeking diverse experiences. You can wander
+              through the tranquil bamboo forests of Arashiyama or marvel at the cherry blossoms in spring.</p>
+            <a href="error404.html">Learn more →</a>
+          </div>
+
+          <div class="nav__info--block nav__info--block--second">
+            <p class="info__block--main">Food lovers will delight in authentic sushi, ramen, and matcha treats. Whether
+              you're exploring ancient castles, vibrant festivals.</p>
+            <p class="info__block--second">Japan is a paradise for travelers seeking diverse experiences. You can wander
+              through the tranquil bamboo forests of Arashiyama or marvel at the cherry blossoms in spring.</p>
+            <a href="error404.html">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="nav__line"></div>
+  </div>
+
+  <section class="trade" id="trade">
+    <div class="container">
+      <div class="trade__info">
+        <div class="trade__info-menu">NEW TOURS</div>
+        <h2 class="trade__title">Have unforgettable emotions</h2>
+      </div>
+
+      <div class="trade__container">
+        <div class="trade__item trade__item--first">
+          <div class="trade__top-right">
+            <img class="heart-icon" src="images/heard.png" alt="лайк" onclick="toggleHeart(this)">
+          </div>
+          <h4 class="trade__name">Tokyo</h4>
+        </div>
+
+        <div class="trade__item trade__item--second">
+          <div class="trade__top-right">
+            <img class="heart-icon" src="images/heard.png" alt="лайк" onclick="toggleHeart(this)">
+          </div>
+          <h4 class="trade__name">Nagana</h4>
+        </div>
+
+        <div class="trade__item trade__item--third">
+          <div class="trade__top-right">
+            <img class="heart-icon" src="images/heard.png" alt="лайк" onclick="toggleHeart(this)">
+          </div>
+          <h4 class="trade__name">Sakagava</h4>
+        </div>
+
+        <div class="trade__item trade__item--fourth">
+          <div class="trade__top-right">
+            <img class="heart-icon" src="images/heard.png" alt="лайк" onclick="toggleHeart(this)">
+          </div>
+          <h4 class="trade__name">Kyoto</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="background2">
+    <section class="why">
+      <div class="container">
+        <h2 class="why__title">Travel and Inspire Your Life</h2>
+
+        <div class="why__list">
+          <div class="why__item">
+            <h3 class="why__item-number">1</h3>
+            <h4 class="why__item-heading">Unique Culture</h4>
+            <p class="why__item-text">A mix of ancient traditions and modern innovations.</p>
+          </div>
+
+          <div class="why__item">
+            <h3 class="why__item-number">2</h3>
+            <h4 class="why__item-heading">Beautiful Nature</h4>
+            <p class="why__item-text">From Mount Fuji to cherry blossoms in spring.</p>
+          </div>
+
+          <div class="why__item">
+            <h3 class="why__item-number">3</h3>
+            <h4 class="why__item-heading">Delicious Food</h4>
+            <p class="why__item-text">Sushi, ramen, and more culinary delights.</p>
+          </div>
+
+          <div class="why__item">
+            <h3 class="why__item-number">4</h3>
+            <h4 class="why__item-heading">Easy Travel</h4>
+            <p class="why__item-text">Efficient trains and comfortable public transport.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <div class="contact-form__content">
+        <div class="contact-form__text">
+          <h2 class="contact-form__title">LET'S DISCUSS THE TRAVEL DETAILS.</h2>
+          <p class="contact-form__subtitle">Contact us</p>
+          <div class="contact-form__icons contact-form__icons--first">
+            <img class="contact-form__icon contact-form__icon--image" src="images/chrome.png" alt="Google">
+            <img class="contact-form__icon contact-form__icon--image" src="images/map-pin.png" alt="Map">
+            <img class="contact-form__icon contact-form__icon--image" src="images/send.png" alt="Send">
+          </div>
+        </div>
+
+        <form class="contact-form__form" action="send.php" method="post">
+          <div class="contact-form__field">
+            <input type="text" name="name" class="contact-form__input" placeholder="Name">
+          </div>
+          <div class="contact-form__field">
+            <input type="email" name="email" class="contact-form__input" placeholder="Email">
+          </div>
+          <div class="contact-form__field">
+            <input type="text" name="message" class="contact-form__input" placeholder="...">
+          </div>
+          <div class="contact-form__footer">
+            <button type="submit" class="contact-form__button">Send</button>
+          </div>
+        </form>
+
+        <div class="contact-form__icons contact-form__icons--second">
+          <img class="contact-form__icon contact-form__icon--image" src="images/chrome.png" alt="Google">
+          <img class="contact-form__icon contact-form__icon--image" src="images/map-pin.png" alt="Map">
+          <img class="contact-form__icon contact-form__icon--image" src="images/send.png" alt="Send">
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer>
+      <div class="container">
+        <div class="nav__menu">
+          <div class="nav__burger" onclick="toggleNav()">
+            <img class="nav__burger-icon" src="images/burger.png" alt="Бургер">
+          </div>
+
+          <ul class="nav__list nav__list--mobile">
+            <li class="nav__item"><a class="nav__link" href="index.html">Main</a></li>
+            <li class="nav__item"><a class="nav__link" href="page2.html">About Us</a></li>
+            <li class="nav__item"><a class="nav__link" href="page3.html">Tours</a></li>
+            <li class="nav__item"><a class="nav__link" href="page4.html">Contact</a></li>
+          </ul>
+          <div id="nav-overlay"></div>
+          <a class="nav__logo" href="error404.html">
+            <img class="nav__logo-image" src="images/Logo.png" alt="Logo">
+          </a>
+        </div>
+
+        <div class="nav__line"></div>
+
+      </div>
+    </footer>
+  </div>
+  <script src="script/script.js"></script>
+</body>
+
+
+</html>

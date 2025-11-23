@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Kokoro&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maket-3</title>
+  <link rel="stylesheet" href="styles/style2.css" />
+</head>
+<body class="page">
+  <div class="background">
+  
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+          <div class="nav__menu">
+            <a class="nav__logo" href="#">
+              <img class="nav__logo-image" src="images/Logo.png" alt="Logo" />
+            </a>
+            <div class="nav__burger" onclick="toggleNav()">
+              <img class="nav__burger-icon" src="images/burger.png" alt="Бургер" />
+            </div>
+            
+            <ul class="nav__list nav__list--mobile">
+              <li class="nav__item"><a class="nav__link" href="index.html">Main</a></li>
+              <li class="nav__item"><a class="nav__link" href="page2.html">About Us</a></li>
+              <li class="nav__item"><a class="nav__link" href="page3.html">Tours</a></li>
+              <li class="nav__item"><a class="nav__link" href="page4.html">Contact</a></li>
+            </ul>
+            <div id="nav-overlay"></div>
+            <form class="nav__form nav__button--search" action="#" method="get">
+              <input type="text" class="nav__input" name="query" placeholder="Search..." >
+              <button type="submit" class="nav__submit">
+                <img class="nav__button-icon" src="images/serch.png" alt="Search Icon" />
+              </button>
+            </form>
+          </div>
+
+          <div class="nav__line"></div>
+        </div>
+      </nav>
+  </header>
+  
+  <section class="nav__section nav__section--front">
+    <div class="container">
+      <div class="nav__title">
+        <h1 class="nav__title-text">VISIT TOKYO</h1>
+        <div class="nav__title-numbers">
+          <p class="nav__title-number">03</p>
+          <p class="nav__title-number">02</p>
+          <p class="nav__title-number nav__title-number--active">01</p>
+          <p class="nav__title-number">04</p>
+          <p class="nav__title-number">05</p>
+        </div>
+      </div>
+
+
+      <div class="nav__info">
+        <div class="nav__info--block main">
+            <h3 class="info__block--title">Company story</h2>
+            <p class="info__block--main">Wander Nippon was born from a shared passion for the hidden beauty of Japan. Founded by two lifelong friends who met under Kyoto’s cherry blossoms, the company set out to show travelers more than just the postcard sights.</p>
+            <a href="#"  class="nav__info--button">Learn more</a>
+        </div>
+            
+        <div class="nav__info--block nav__info--block--second">
+            <h3 class="info__block--title">Mission state</h2>
+            <p class="info__block--main">To create unforgettable travel experiences across Japan by combining authentic cultural immersion, personalized service, and deep local knowledge. We aim to connect travelers with the heart of Japan—its people and traditions.</p>
+            <a href="#" class="nav__info--button">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="nav__line"></div>
+</div>
+
+
+<section class="experts" id="experts">
+  <div class="container">
+    <div class="experts__info">
+      <div class="experts__info-menu">OUR TEAM</div>
+      <h2 class="experts__title">Learn More About Our Guides</h2>
+    </div>
+
+    <div class="experts__container">
+      <div class="experts__item">
+        <div class="experts__photo experts__photo--aiko"></div>
+        <div class="experts__text-block">
+          <div class="experts__like">
+            <img class="heart-icon" src="images/heard.png" alt="лайк" onclick="toggleHeart(this)">
+          </div>
+          <h4 class="experts__name">Aiko Tanaka</h4>
+          <p class="experts__desc">Cultural guide from Kyoto with a deep love for traditional Japanese arts.</p>
+        </div>
+      </div>
+
+      <div class="experts__item">
+        <div class="experts__photo experts__photo--takeshi"></div>
+        <div class="experts__text-block">
+          <div class="experts__like">
+            <img class="heart-icon" src="images/heard.png" alt="лайк" onclick="toggleHeart(this)">
+          </div>
+          <h4 class="experts__name">Tashi Morimoto</h4>
+          <p class="experts__desc">With 20 years of experience, Takeshi blends logistics with storytelling to make every journey unforgettable.</p>
+        </div>
+      </div>
+
+      <div class="experts__item">
+        <div class="experts__photo experts__photo--kenji"></div>
+        <div class="experts__text-block">
+          <div class="experts__like">
+            <img class="heart-icon" src="images/heard.png" alt="лайк" onclick="toggleHeart(this)">
+          </div>
+          <h4 class="experts__name">Kenji Sato</h4>
+          <p class="experts__desc">Outdoor adventure planner from Hokkaido, leading hiking and hot spring excursions.</p>
+        </div>
+      </div>
+
+      <div class="experts__item">
+        <div class="experts__photo experts__photo--emi"></div>
+        <div class="experts__text-block">
+          <div class="experts__like">
+            <img class="heart-icon" src="images/heard.png" alt="лайк" onclick="toggleHeart(this)">
+          </div>
+          <h4 class="experts__name">Emi Nakamura</h4>
+          <p class="experts__desc">Tokyo-based food expert connecting culinary tours through street snacks and fine dining.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="background2">
+
+<section class="contact-form" >
+    <div class="contact-form__content">
+      <div class="contact-form__text">
+        <h2 class="contact-form__title">LET'S DISCUSS THE TRAVEL DETAILS.</h2>
+        <p class="contact-form__subtitle">Contact us</p>
+        <div class="contact-form__icons contact-form__icons--first">
+          <img class="contact-form__icon contact-form__icon--image" src="images/chrome.png" alt="Google">
+          <img class="contact-form__icon contact-form__icon--image" src="images/map-pin.png" alt="Map">
+          <img class="contact-form__icon contact-form__icon--image" src="images/send.png" alt="Send">
+        </div>
+      </div>
+
+      <form class="contact-form__form" action="send.php" method="post">
+        <div class="contact-form__field">
+          <input type="text" name="name" class="contact-form__input" placeholder="Name">
+        </div>
+        <div class="contact-form__field">
+          <input type="email" name="email" class="contact-form__input" placeholder="Email">
+        </div>
+        <div class="contact-form__field">
+          <input type="text" name="message" class="contact-form__input" placeholder="...">
+        </div>
+        <div class="contact-form__footer">
+          <button type="submit" class="contact-form__button">Send</button>
+        </div>
+      </form>
+
+      <div class="contact-form__icons contact-form__icons--second">
+        <img class="contact-form__icon contact-form__icon--image" src="images/chrome.png" alt="Google">
+        <img class="contact-form__icon contact-form__icon--image" src="images/map-pin.png" alt="Map">
+        <img class="contact-form__icon contact-form__icon--image" src="images/send.png" alt="Send">
+      </div>
+    </div>
+</section>
+
+<section class="faq-section">
+  <div class="container">
+    <div class="faq">
+    <h2 class="faq__title">Q&A</h2>
+
+    <div class="faq__item">
+      <button class="faq__question" onclick="toggleAnswer(this)">
+        Do I need a visa to travel to Japan?
+        <span class="faq__arrow">&#9662;</span>
+      </button>
+      <div class="faq__answer">
+        It depends on your nationality. Many countries have visa-free access for short stays. Check with the Japanese embassy or consulate in your country.
+      </div>
+    </div>
+
+    <div class="faq__item">
+      <button class="faq__question" onclick="toggleAnswer(this)">
+        What is the best time to visit Japan?
+        <span class="faq__arrow">&#9662;</span>
+      </button>
+      <div class="faq__answer">
+        Spring (March to May) and autumn (September to November) are considered the best times due to pleasant weather and natural beauty like cherry blossoms or colorful foliage.
+      </div>
+    </div>
+
+    <div class="faq__item">
+      <button class="faq__question" onclick="toggleAnswer(this)">
+        Is Japan expensive to travel in?
+        <span class="faq__arrow">&#9662;</span>
+      </button>
+      <div class="faq__answer">
+        Japan can be budget-friendly if you plan ahead. Affordable accommodations, food options, and rail passes help travelers save money.
+      </div>
+    </div>
+
+    <div class="faq__item">
+      <button class="faq__question" onclick="toggleAnswer(this)">
+        Can I get around Japan without speaking Japanese?
+        <span class="faq__arrow">&#9662;</span>
+      </button>
+      <div class="faq__answer">
+        Yes! Major transportation, tourist spots, and signs often have English translations, and many locals are helpful.
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer>
+  <div class="container">
+    <div class="nav__menu">
+      <div class="nav__burger" onclick="toggleNav()">
+        <img class="nav__burger-icon" src="images/burger.png" alt="Бургер" />
+      </div>
+            
+      <ul class="nav__list nav__list--mobile">
+        <li class="nav__item"><a class="nav__link" href="index.html">Main</a></li>
+        <li class="nav__item"><a class="nav__link" href="page2.html">About Us</a></li>
+        <li class="nav__item"><a class="nav__link" href="page3.html">Tours</a></li>
+        <li class="nav__item"><a class="nav__link" href="page4.html">Contact</a></li>
+      </ul>
+      <div id="nav-overlay"></div>
+      <a class="nav__logo" href="#">
+        <img class="nav__logo-image" src="images/Logo.png" alt="Logo" />
+      </a>
+    </div>
+    
+    <div class="nav__line"></div>
+
+  </div>
+</footer>
+</div>
+
+</body>
+
+<script src="script/script.js"></script>
+</html>

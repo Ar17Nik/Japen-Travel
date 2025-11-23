@@ -1,0 +1,538 @@
+@import '_variables';
+@import '_footer';
+@import '_header';
+@import '_form';
+
+
+body, main{
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.background {
+  margin: 0 auto;
+  background-image: url("../images/image4.gif");
+  background-size: cover;
+  background-position: center;
+}
+.header{
+ width: 100%;
+ padding:3% 6%;
+ margin: 0 auto; 
+}
+.nav__section{
+  padding: 6% 6% 0 6%;
+}
+
+.nav {
+  &__menu--title{
+    color:$gray-light;
+    font-size: clamp(24px, 5vw, 48px);
+  }
+  &__input {
+    flex: 1 1;
+    border: none;
+    background: transparent;
+    color: $white;
+    font-size: 16px;
+    outline: none;
+    max-width: 120px;
+  }
+
+  &__submit {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__button-icon {
+    max-width: 36px;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin: 30px auto 60px auto;
+    color: $gray;
+    max-height: 370px;
+
+    &--block {
+      display: grid;
+      grid-template-rows: 0.8fr auto 0.5fr;
+      position: relative;
+      flex: 1;
+      border-radius: 16px;
+      overflow: hidden;
+
+      &:hover {
+        .nav__info--button {
+          opacity: 1;
+        }
+      }
+    }
+
+    &--button {
+      opacity: 0;
+      padding: 30px 0;
+      margin-top: 30px;
+      border: 2px solid $accent;
+      background-color: transparent;
+      color: $accent;
+      border-radius: 32px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.25rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      max-width: 60%;
+      text-align: center;
+
+      &:hover {
+        background-color: $accent;
+        color: $black;
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+.info__block--title, .info__block--main {
+  &:hover {
+    color: $gray-light;
+  }
+}
+
+.info__block--title {
+  margin: 0;
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.info__block--main {
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 1.6;
+  color: $gray;
+  margin-top: 0 auto;
+}
+
+
+.reviews {
+  padding: 6%;
+  background-color: $black;
+  font-family: $font-secondary;
+  text-align: center;
+
+  &__title {
+    font-size: 28px;
+    color: $gray-light;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    color: $gray-medium;
+    margin-bottom: 40px;
+  }
+
+  &__grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  &__footer {
+    margin-top: 6%;
+  }
+
+  &__button {
+    background-color: $accent;
+    color: $white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $accent-hover;
+    }
+  }
+}
+
+.review {
+  &__card {
+    background-color: rgba($accent, 0.4);
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 200px;
+    flex: 1 1;
+    text-align: left;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+  }
+
+  &__meta {
+    h4 {
+      font-size: 18px;
+      color: $gray-light;
+      margin: 0;
+    }
+  }
+
+  &__date {
+    font-size: 12px;
+    color: $gray;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $gray-light;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  &__rating {
+    font-size: 16px;
+    color: $accent;
+    font-weight: bold;
+    margin-bottom: auto;
+  }
+}
+
+.background2{
+  background-image: url("../images/back4.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (max-width: 1200px) {
+  .nav {
+    &__menu--title {
+      font-size: 58px;
+    }
+
+    &__link {
+      display: block;
+      font-weight: 600;
+      font-size: 21px;
+    }
+  }
+
+  .info {
+    &__block--title {
+      font-size: 32px;
+    }
+
+    &__block--main {
+      font-size: 18px;
+    }
+  }
+
+  .experts {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__name {
+      font-size: 20px;
+    }
+
+    &__desc {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .nav {
+    &__burger {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .nav {
+    &__menu--title {
+      font-size: 52px;
+    }
+
+    &__title {
+      &-text {
+        font-size: 142px;
+      }
+
+      &-number {
+        font-size: 22px;
+
+        &--active {
+          font-size: 38px;
+        }
+      }
+    }
+
+    &__list {
+      display: none;
+
+      &--mobile {
+        position: fixed;
+        top: 80px;
+        right: 6%;
+        background-color: $black;
+        border-radius: 16px;
+        padding: 30px 40px;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 1000;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        animation: fadeIn 0.3s ease forwards;
+
+        &.active {
+          display: flex;
+        }
+      }
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    &__link {
+      color: $gray-light;
+      font-size: 22px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $accent;
+        text-decoration: none;
+      }
+    }
+
+    &__info-block {
+      font-size: 18px;
+    }
+
+    &__info--button {
+      max-width: 95%;
+    }
+  }
+
+  #nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 900;
+    display: none;
+    transition: opacity 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .info {
+    &__block--title {
+      font-size: 28px;
+    }
+
+    &__block--main {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    .nav__logo,
+    .nav__line {
+      display: none;
+    }
+  }
+
+  .review__card {
+    min-width: 100%;
+  }
+
+  .reviews {
+
+   &__title {
+    font-size: 22px;
+  }
+  &__subtitle {
+    font-size: 16px;
+  }
+}
+
+  .nav {
+    &__menu--title {
+      font-size: 36px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__title {
+      margin: 30% 0 30% 0;
+
+      &-text {
+        font-size: 110px;
+      }
+
+      &-number {
+        font-size: 20px;
+
+        &--active {
+          font-size: 36px;
+        }
+      }
+    }
+
+    &__info {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      &--block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+        padding-bottom: 6%;
+
+        &--second {
+          display: none;
+        }
+
+        .second {
+          display: none;
+        }
+
+        a {
+          margin-top: 20px;
+          padding: 25px 50px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  .nav {
+    &__form {
+      display: none;
+    }
+
+    &__menu--title {
+      font-size: 32px;
+    }
+
+    &__title {
+      &-text {
+        font-size: 82px;
+        max-width: 300px;
+      }
+
+      &-number {
+        font-size: 16px;
+
+        &--active {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .nav {
+    &__menu--title {
+      font-size: 24px;
+    }
+
+    &__title {
+      &-text {
+        font-size: 64px;
+      }
+
+      &-number {
+        font-size: 12px;
+
+        &--active {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+
+  .trade__title {
+    font-size: 22px;
+  }
+}
+
+

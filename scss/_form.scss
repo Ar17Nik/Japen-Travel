@@ -1,0 +1,194 @@
+@import '_variables';
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
+  color: $white;
+  width: 100%;
+  box-sizing: border-box;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 550px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    color: $gray-light;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 550px;
+  }
+
+  &__title {
+    font-size: clamp(32px, 5vw, 64px);
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+  }
+
+  &__subtitle {
+    font-size: clamp(24px, 4vw, 40px);
+    margin-bottom: auto;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 6%;
+    margin-top: 60px;
+    flex-wrap: wrap;
+
+    &--second { display: none; }
+  }
+
+  &__icon--image {
+    width: 80px;
+    height: 80px;
+    background-color: $bg-icon;
+    padding: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $bg-icon-hover;
+    }
+  }
+
+  &__form {
+    flex: 1 1 300px;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 100%;
+    gap: 35px;
+  }
+
+  &__field { width: 100%; }
+
+  &__input {
+    width: 100%;
+    min-height: 95px;
+    border: none;
+    border-radius: 52px;
+    background-color: $bg-icon;
+    padding: 0 5%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+
+    &--message {
+      height: 120px;
+      resize: none;
+    }
+
+    &::placeholder {
+      color: $gray;
+      font-size: 1rem;
+    }
+
+    &:hover {
+      background-color: $bg-icon-hover;
+      outline: none;
+      caret-color: $gray;
+      color: $gray;
+      font-size: 20px;
+
+      &::placeholder { color: transparent; }
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+    padding: 0 20px;
+    min-width: 320px;
+    align-self: center;
+    min-height: 100px;
+    border: 2px solid $accent;
+    background-color: transparent;
+    color: $accent;
+    border-radius: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    margin-top: auto;
+
+    &:hover {
+      background-color: $accent;
+      color: $black;
+      font-size: 1.5rem;
+    }
+  }
+}
+@media (max-width: 1200px) {
+
+  .contact-form {
+    &__heading { font-size: 60px; }
+    &__subheading { font-size: 36px; }
+    &__icon--image {
+      width: 70px; height: 70px; padding: 15px; border-radius: 50%;
+    }
+  }
+}
+@media (max-width: 960px) {
+
+  .contact-form__icon--image { width: 60px; height: 60px; }
+}
+
+
+@media (max-width: 768px) {
+  .contact-form {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      gap: 20px;
+      height: auto;
+      align-items: center;
+    }
+
+    &__icons--first { display: none; }
+    &__icons--second { display: block; }
+
+    &__text { grid-row: 1; text-align: center; min-height: 80px; }
+    &__button { width: 100%; }
+    &__form { grid-row: 3; margin: 30px auto 0; width: 100%; min-height: 0; }
+    &__icons { grid-row: 4; margin: 60px auto 0; width: 100%; text-align: center; }
+    &__icon { margin: 0 2%; }
+    &__title { font-size: 22px; text-align: center; }
+    &__subtitle { font-size: 16px; }
+    &__input { min-height: 80px; }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .contact-form {
+    &__title { font-size: 26px; margin: 0 auto; }
+    &__subtitle { font-size: 20px; }
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-form {
+    &__title { font-size: 22px; max-width: 250px; }
+    &__subtitle { font-size: 16px; }
+    &__input { min-height: 65px; min-width: 280px; }
+    &__form { max-width: 100%; margin-top: 0; }
+    &__button { width: 100%; min-height: 80px; min-width: 250px; }
+  }
+}
+
