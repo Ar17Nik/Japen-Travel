@@ -465,7 +465,6 @@ body, main {
   gap: 60px;
   margin: 30px auto 60px auto;
   color: #A2A2A2;
-  max-height: 370px;
 }
 .nav__info--block {
   display: grid;
